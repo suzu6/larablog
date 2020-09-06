@@ -17,12 +17,12 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->string('discription');
             $table->string('html');
-            $table->string('top_image_url');
-            $table->foreignId('user_id')->comment('auther');
-            $table->softDeletes('deleted_at', 0);
             $table->boolean('is_draft');
+            // $table->string('discription');
+            // $table->string('top_image_url');
+            // $table->foreignId('user_id')->constrained()->comment('auther');
+            $table->softDeletes('deleted_at', 0);
         });
     }
 
