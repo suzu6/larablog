@@ -16,4 +16,9 @@ class Post extends Model
         'html',
         'is_draft'
     ];
+
+    public function tags()
+    {
+        return $this->belongsToMany('App\Models\Tag');
+    }
 }
