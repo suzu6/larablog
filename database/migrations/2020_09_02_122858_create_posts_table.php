@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->string('html');
+            $table->string('body');
             $table->boolean('is_draft');
             // $table->string('discription');
             // $table->string('top_image_url');

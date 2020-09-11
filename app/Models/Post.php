@@ -13,7 +13,7 @@ class Post extends Model
 
     protected $fillable = [
         'title',
-        'html',
+        'body',
         'is_draft'
     ];
 
