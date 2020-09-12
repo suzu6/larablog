@@ -20,6 +20,7 @@ Route::group(['middleware' => ['api']], function(){
 Route::get('/tasks', 'Api\TaskController@index');
 Route::post('/tasks', 'Api\TaskController@store');
 Route::get('/tasks/{task}', 'Api\TaskController@show');
+Route::put('/tasks/{task}', 'TaskController@update');
 
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
